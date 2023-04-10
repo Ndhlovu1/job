@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} Jobs | Signed Out {% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <h1 style="margin-top: 50px; margin-left: 50px;">
+        <span class="badge badge-danger shadow-lg">
+            SIGNED OUT
+        </span>
+    </h1>
+
+    <div class="d-flex justify-content-center align-items-center  ">
+        <div class="col-md-5 align-items-center">
+            <div class="card shadow-lg text-center rounded" style="margin: 10px; margin-bottom: 100px;">
+                <img src="{% static 'misc/growth.jpg' %}" alt="experience" class="card-img-top" style="padding: 20px; border-radius: 50px;" />
+                <div class="card-body">
+                    <a href="{% url 'login' %}">
+                        <hr/>
+                        <h2 class="card-title">SIGN IN
+                            <i class="fas fa-unlock"></i>
+                        </h2>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+
+    {% endblock %}
+
+
+

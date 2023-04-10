@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %} Jobs | Dashboard {% endblock %}
+
+
+{% block content %}
+
+    {% load static %}
+
+
+    {% if request.user.is_authenticated %}
+
+        <span class="badge badge-info shadow-lg" style="margin: 60px;" >
+            <h1>{{ request.user.last_name | capfirst }}'s Dashboard</h1>
+        </span>
+
+
+
+    <div class="d-flex">
+        <div class="col-md-6 align-items-center">
+            <div class="card shadow-lg text-center rounded" style=" margin: 50px; height: 450px; border-radius: 50px;">
+                <div class="card-body">
+                    <h2 class="card-title" style="margin: 100px;">CHAT</h2>
+                    <!-- <i class="fas fa-sign-in-alt fa-4x"></i> -->
+                    <hr/>
+                    <i class="fab fa-rocketchat fa-4x"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 align-items-center">
+            <div class="card shadow-lg text-center rounded" style=" margin: 50px; height: 450px; border-radius: 50px;">
+                <div class="card-body">
+                    <h2 class="card-title" style="margin: 100px;">NEWS</h2>
+                    <!-- <i class="fas fa-sign-in-alt fa-4x"></i> -->
+                    <hr/>
+                    <i class="fas fa-newspaper fa-4x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% else %}
+        <a href="{% url 'logout' %}">Logout</a>
+        
+        <a href="{% url 'login' %}">Login</a>
+        
+
+    {% endif %}
+    
+    
+{% endblock %}
+
+
+

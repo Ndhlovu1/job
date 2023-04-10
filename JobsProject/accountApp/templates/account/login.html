@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} Account | Login {% endblock %}
+
+{% block content %}
+<h1>Hello Miro!</h1>
+<p>
+    "Helping You Make A Livin"
+</p>
+
+<form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p>
+        <input type="submit" value="Log in">
+    </p>
+</form>
+
+{% endblock %}
+
+
+
+

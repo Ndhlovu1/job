@@ -2,6 +2,7 @@
 A web application designed to help students find employment with prospective cheap labour market
 
 ## APPLICATION SCREENSHOTS
+#### LANDING PAGE
 ![Screenshot from 2023-06-20 18-11-35](https://github.com/Ndhlovu1/job/assets/46927702/0b4d7ddc-94ed-4e97-91fd-9e920767e755)
 
 ## Authentication

@@ -17,6 +17,8 @@ A web application designed to help students find employment with prospective che
 #### SIGNED OUT PAGE
 ![Screenshot from 2023-06-20 18-12-42](https://github.com/Ndhlovu1/job/assets/46927702/31c8ed53-fe99-4195-a215-1dda797d6311)
 
+#### FORGOT PASSWORD PAGE
+
 
 
 

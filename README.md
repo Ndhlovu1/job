@@ -11,6 +11,8 @@ A web application designed to help students find employment with prospective che
 #### DASHBOARD PAGE
 ![Screenshot from 2023-06-20 18-12-13](https://github.com/Ndhlovu1/job/assets/46927702/73583959-b434-4c8a-a510-b893f9559a5b)
 
+####
+
 
 ## Authentication
 ### Django Authentication Framework

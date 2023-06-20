@@ -2,9 +2,103 @@
 {% block title %} Jobs | Edit Profile {% endblock %}
 
 {% block content %}
-    {% comment %} <h1>
-        Edit Your Profile
-    </h1>
+  
+<span class="badge badge-success shadow-lg" style="margin: 60px;" >
+    <h1>Edit Profile</h1>
+</span>
+
+    <form method="post">
+        <div class="d-flex">
+            <div class="col-md-6 align-items-center">
+                <div class="card shadow-lg text-center rounded" style=" margin: 50px; border-radius: 50px;">
+                    <div class="card-body">
+
+                            <h3>
+                                First Name<br/>{{ user_form.first_name }}
+                            </h3>
+
+                            <h3>
+                                Last Name<br/>{{ user_form.last_name }}</h3>
+                            <h3 >
+                                Email Address<br/>{{  user_form.email }}
+                            </h3>
+
+                            <h3>
+                                Organization/Company<br/>{{  profile_form.company }}
+                            </h3>
+
+                            <h3 >
+                                Institution/University<br/>{{  profile_form.institution }}
+                            </h3>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 align-items-center">
+                <div class="card shadow-lg text-center rounded" style=" margin: 50px; border-radius: 50px;">
+                    <div class="card-body">
+                
+                            <p>
+                                {{ profile_form.last_job.label }}<br/>{{  profile_form.last_job }}
+                            </p>
+
+                            <h3>
+                                {{ profile_form.field_of_study.label }}<br/>{{  profile_form.field_of_study }}
+                            
+                            </h3>
+
+
+                            <h3>
+                                {{ profile_form.date_of_birth.label }}{{  profile_form.date_of_birth }}
+                            </h3>
+
+                            <h3>
+                                Date Hired<br/>{{  profile_form.start_date }}
+                            </h3>
+
+                            <h3>
+                                Date Departed<br/>{{  profile_form.end_date }}
+                            </h3>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% comment %} _________________ {% endcomment %}
+
+        <div class="d-flex justify-content-center align-items-center" >
+            <div class="col-md-6 align-items-center" style="padding-bottom:100px;" >
+                <div class="card shadow-lg text-center rounded" style=" margin-left: 100px; margin-top:50px; border-radius: 50px;">
+                    <div class="card-body">
+
+                            <h3>
+                                About You<br/>{{ profile_form.bio }}
+                            </h3>
+
+                            <h3>
+                                {{ profile_form.profile_photo.label }}<br/>{{  profile_form.profile_photo }}
+                            </h3>
+                            
+                                {% csrf_token %}
+
+                            <h3>
+                                <button type="submit" class="btn btn-primary btn-lg" >Update Profile</button>
+                            </h3>
+                    
+                        
+
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </form> 
+
 
     <p>
         Make your account stand out!
@@ -16,102 +110,10 @@
         <p>
             <input type="submit" value="Save Changes">
         </p>
-    </form>  {% endcomment %}
+    </form> 
 
-
-    <span class="badge badge-success shadow-lg" style="margin: 60px;" >
-        <h1>Edit Profile</h1>
-    </span>
-
-    <div class="d-flex">
-        <div class="col-md-6 align-items-center">
-            <div class="card shadow-lg text-center rounded" style=" margin: 50px; border-radius: 50px;">
-                <div class="card-body">
-                    <h3>
-                        First Name<br/>{{ user_form.first_name }}
-                    </h3>
-
-                    <h3>
-                        Last Name<br/>{{ user_form.last_name }}</h3>
-                    <h3 >
-                        Email Address<br/>{{  user_form.email }}
-                    </h3>
-
-                    <h3>
-                        Organization/Company<br/>{{  profile_form.company }}
-                    </h3>
-
-                    <h3 >
-                        Institution/University<br/>{{  profile_form.institution }}
-                    </h3>
-
-
-
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 align-items-center">
-            <div class="card shadow-lg text-center rounded" style=" margin: 50px; border-radius: 50px;">
-                <div class="card-body">
-            
-                    <h3 >
-                        {{ profile_form.last_job.label }}<br/>{{  profile_form.last_job }}
-                    </h3>
-
-                    <h3>
-                        {{ profile_form.field_of_study.label }}<br/>{{  profile_form.field_of_study }}
-                    
-                    </h3>
-
-
-                    <h3>
-                        {{ profile_form.date_of_birth.label }}{{  profile_form.date_of_birth }}
-                    </h3>
-
-                    <h3>
-                        Date Hired<br/>{{  profile_form.start_date }}
-                    </h3>
-
-                    <h3>
-                        Date Departed<br/>{{  profile_form.end_date }}
-                    </h3>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {% comment %} _________________ {% endcomment %}
-
-    <div class="d-flex justify-content-center align-items-center" >
-        <div class="col-md-6 align-items-center" style="padding-bottom:100px;" >
-            <div class="card shadow-lg text-center rounded" style=" margin-left: 100px; margin-top:50px; border-radius: 50px;">
-                <div class="card-body">
-
-                    <h3>
-                        About You<br/>{{ profile_form.bio }}
-                    </h3>
-
-                    <h3>
-                        {{ profile_form.profile_photo.label }}<br/>{{  profile_form.profile_photo }}
-                    </h3>
-
-                    {% csrf_token %}
-                    <h3>
-                        <button type="submit" class="btn btn-primary btn-lg" >Update Profile</button>
-                    </h3>
-
-                </div>
-            {% comment %} </div> end {% endcomment %}
-        </div>
-
-    </div>
 
     
-
-
 {% comment %} 
     <div class="d-flex justify-content-center align-items-center">
         <div class="col-md-12 align-items-center">

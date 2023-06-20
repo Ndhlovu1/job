@@ -85,6 +85,9 @@ Below is a description of going through each field at a time for a ModelForm i.e
 </table>
 ```
 
+#### WHEN MIGRATING TO DIFFERENT PLATFORM SIMPLY CREATE A VIRTUAL ENV, THEN INSTALL ALL THE DEPENDENCIES
+ALSO : YOU CAN DECIDE THE VERSION OF PIPENV TO USE i.e
+```pipenv --python 3.8```
 
 
 

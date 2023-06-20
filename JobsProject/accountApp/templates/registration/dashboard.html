@@ -11,9 +11,12 @@
     {% if request.user.is_authenticated %}
 
         <span class="badge badge-info shadow-lg" style="margin: 60px;" >
-            <h1>{{ request.user.last_name | capfirst }}'s Dashboard</h1>
+            <h1>{{ request.user.first_name | capfirst }}'s Dashboard</h1>
+                        
+            <h3>{{ request.user.profile.field_of_study | capfirst }}</h3> 
+                
+            
         </span>
-
 
 
     <div class="d-flex">

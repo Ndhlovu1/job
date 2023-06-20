@@ -1,6 +1,8 @@
 # Job-Finder
 A web application designed to help students find employment with prospective cheap labour market
 
+## APPLICATION SCREENSHOTS
+
 ## Authentication
 ### Django Authentication Framework
 It is found in the ```django.contrib.auth``` and it is added by default there are two middleware found in the MIDDLEWARE setting of the Project

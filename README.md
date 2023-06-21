@@ -3,6 +3,7 @@ A web application designed to help students find employment with prospective che
 
 ## APPLICATION SCREENSHOTS
 #### LANDING PAGE / LOGIN PAGE
+![Screenshot from 2023-06-20 18-11-35](https://github.com/Ndhlovu1/job/assets/46927702/46feafe4-240e-4a43-98f1-78a9ea874c93)
 
 #### REGISTRATION PAGE
 ![Screenshot from 2023-06-20 18-11-57](https://github.com/Ndhlovu1/job/assets/46927702/ccec5913-b807-4e89-9c74-e6f288dc6d4f)

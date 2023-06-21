@@ -19,7 +19,7 @@ A web application designed to help students find employment with prospective che
 
 
 #### FORGOT PASSWORD PAGE
-![Screenshot from 2023-06-20 18-16-58](https://github.com/Ndhlovu1/job/assets/46927702/a016733b-5ab3-48e4-af70-759bd2cd8db2)
+
 
 ## Authentication
 ### Django Authentication Framework

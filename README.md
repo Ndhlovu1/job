@@ -6,6 +6,7 @@ A web application designed to help students find employment with prospective che
 ![Screenshot from 2023-06-20 18-11-35](https://github.com/Ndhlovu1/job/assets/46927702/46feafe4-240e-4a43-98f1-78a9ea874c93)
 
 #### REGISTRATION PAGE
+![Screenshot from 2023-06-20 18-11-57](https://github.com/Ndhlovu1/job/assets/46927702/ef2b057e-3330-4db0-a389-b1b51048c8bc)
 
 #### DASHBOARD PAGE
 ![Screenshot from 2023-06-20 18-12-13](https://github.com/Ndhlovu1/job/assets/46927702/73583959-b434-4c8a-a510-b893f9559a5b)
